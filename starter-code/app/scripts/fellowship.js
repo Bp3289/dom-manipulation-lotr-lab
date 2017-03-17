@@ -49,7 +49,7 @@ function makeHobbits() {
     console.log(target);
     for (var i = 0; i < hobbits.length; i++){
       var list = document.createElement('li');
-      list.setAttribute('class','hobbit');
+      list.setAttribute('class',lands[0]);
       list.textContent = hobbits[i];
       target.appendChild(list);
 
