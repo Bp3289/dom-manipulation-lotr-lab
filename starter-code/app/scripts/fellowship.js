@@ -29,9 +29,9 @@ function makeMiddleEarth() {
    console.log(middleEarth);
   for (var i = 0; i < lands.length; i++){
       var article = document.createElement('article');
-      middleEarth.appendChild(article);
       var h1 = document.createElement('h1');
       h1.textContent = lands[i];
+      middleEarth.appendChild(article);
       article.appendChild(h1);
       body.appendChild(middleEarth);
   }
@@ -52,6 +52,8 @@ function makeHobbits() {
       list.setAttribute('class',lands[0]);
       list.textContent = hobbits[i];
       target.appendChild(list);
+      body.appendChild(target);
+      console.log(target);
 
 
 
