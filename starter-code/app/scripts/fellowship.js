@@ -45,19 +45,26 @@ makeMiddleEarth();
 
 function makeHobbits() {
   // display an unordered list of hobbits in the shire (which is the first article tag on the page)
+    //create an element with the tag ul to contain our hobbits!
     var target = document.createElement('ul');
-    console.log(target);
+    //for each of the hobbits in the list of hobbit names, create an element for it!
     for (var i = 0; i < hobbits.length; i++){
+      //create the list element for the current hobbit in the list!
       var list = document.createElement('li');
-      list.setAttribute('class',lands[0]);
+      //get the name of the current hobbit in the list and set that name to the element item's text
       list.textContent = hobbits[i];
+      //stick the new list item onto the ul element!
       target.appendChild(list);
-      body.appendChild(target);
-      console.log(target);
-
-
-
     }
+    //get the shire element from the dom!
+    var shire = document.getElementsByTagName('article')[0];
+    //stick the ul element that contains our hobbits to the shire element!
+    shire.appendChild(target);
+    
+
+    // Attached the ul to body
+
+    //body.appendChild(target);
 
   // give each hobbit a class of hobbit
 }
