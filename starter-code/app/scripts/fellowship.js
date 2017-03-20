@@ -117,12 +117,15 @@ rivendell.appendChild(aside);
 makeBuddies();
 
 // Part 5
-
+var rivendell = document.getElementsByTagName('article')[1];
+var Strider = rivendell.getElementsByTagName('li')[4];
 
 function beautifulStranger() {
   // change the 'Strider' textnode to 'Aragorn'
+  Strider.textContent = "Aragorn";
+  console.log(Strider);
 }
-
+beautifulStranger();
 
 // Part 6
 
