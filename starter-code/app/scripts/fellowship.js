@@ -92,7 +92,6 @@ function keepItSecretKeepItSafe() {
   theRing.addEventListener('click', nazgulScreech);
   // add the ring as a child of Frodo
  frodo.appendChild(theRing);
- body.appendChild(frodo);
 
 }
 
@@ -122,19 +121,18 @@ rivendell.appendChild(aside);
 makeBuddies();
 
 // Part 5
-/*var Strider = rivendell.getElementsByTagName('li')[4];
+var Strider = rivendell.getElementsByTagName('li')[3];
 
 function beautifulStranger() {
   // change the 'Strider' textnode to 'Aragorn'
-  Strider.textContent = "Aragorn";
-  console.log(Strider);
+  Strider.textContent = 'Aragorn';
 }
+
 beautifulStranger();
 
 // Part 6
 
-var hobbits = shire.getElementsByTagName('ul');
-function leaveTheShire() {
+/*function leaveTheShire() {
   // assemble the hobbits and move them to Rivendell
   rivendell.appendChild(hobbits[0]);
 }
