@@ -80,6 +80,7 @@ function makeHobbits() {
 
 
 // Part 3
+var frodo = body.querySelectorAll('li')[0];
 
 function keepItSecretKeepItSafe() {
   // create a div with an id of 'the-ring'
@@ -88,10 +89,10 @@ function keepItSecretKeepItSafe() {
   // give the div a class of 'magic-imbued-jewelry'
   theRing.setAttribute('class', 'magic-imbued-jewelry');
   // add an event listener so that when a user clicks on the ring, the nazgulScreech function (provided) is invoked
-  theRing.addEventListener('click', '..media/nazgul_screech.mp3');
+  theRing.addEventListener('click', nazgulScreech);
   // add the ring as a child of Frodo
- var frodo = document.getElementsByTagName('li')[0];
  frodo.appendChild(theRing);
+ body.appendChild(frodo);
 
 }
 
@@ -104,25 +105,24 @@ function makeBuddies() {
   var aside = document.createElement('aside');
   // attach an unordered list of the 'buddies' in the aside
   var lion = document.createElement('ul');
-   var tiger = document.createElement('li');
+   
     for (var i = 0; i < buddies.length; i++){
-  
-    
+      var tiger = document.createElement('li');
       tiger.textContent = buddies[i];
-      
       lion.appendChild(tiger);
-      aside.appendChild(lion);
-      console.log(lion);
 
   // insert your aside as a child element of rivendell
 }
 
+aside.appendChild(lion);
+
 rivendell.appendChild(aside);
+
 }
 makeBuddies();
 
 // Part 5
-var Strider = rivendell.getElementsByTagName('li')[4];
+/*var Strider = rivendell.getElementsByTagName('li')[4];
 
 function beautifulStranger() {
   // change the 'Strider' textnode to 'Aragorn'
@@ -141,7 +141,7 @@ function leaveTheShire() {
 leaveTheShire();
 
 // Part 7
-
+*/
 
 function forgeTheFellowShip() {
   // create a new div called 'the-fellowship' within rivendell
