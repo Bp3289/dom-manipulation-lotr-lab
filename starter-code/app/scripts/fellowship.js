@@ -63,17 +63,10 @@ function makeHobbits() {
       //stick the new list item onto the ul element!
       target.appendChild(list);
     }
-    //get the shire element from the dom!
  
     //stick the ul element that contains our hobbits to the shire element!
     shire.appendChild(target);
     
-
-    // Attached the ul to body
-
-    //body.appendChild(target);
-
-  // give each hobbit a class of hobbit
 }
 
   makeHobbits();
